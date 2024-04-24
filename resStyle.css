@@ -1,0 +1,64 @@
+  /* Media query for responsive design */
+  @media (max-width: 768px) {
+    .navbar-menu {
+      display: none;
+    }
+    
+    .navbar-toggle {
+      display: block;
+    }
+    
+    .toggle-line {
+      transition: all 0.5s;
+    }
+
+    @media screen and (max-width: 768px) {
+      #loop>h1 {
+        font-size: 30px; /* Decrease font size for smaller screens */
+        line-height: 1.1; /* You can adjust line height if needed */
+      }
+      #loop>p{
+        font-size: 12px;
+        line-height: 24px;
+      }
+    }
+    @media screen and (max-width: 667px) {
+      #loop>h1 {
+        font-size: 24px; /* Decrease font size for smaller screens */
+        line-height: 1.1; /* You can adjust line height if needed */
+      }
+      #loop>p{
+        font-size: 10px;
+        line-height: 24px;
+      }
+      #loop>h3{
+        font-size: 14px;
+      }
+      #loop>h3>span{
+        font-size: 16px;
+      }
+      .aboutMe img {
+        height: 300px;
+        width: 300px;
+      }
+      .about-text h2{
+        font-size: 30px;
+        margin: 0;
+      }
+    }
+    
+    .navbar-menu.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #000;
+      padding: 10px 0;
+    }
+    
+    .navbar-menu.active li {
+      margin: 10px 0;
+    }
+  }
